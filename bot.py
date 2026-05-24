@@ -463,8 +463,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
 
         response = client.chat.completions.create(
-            model="deepseek-chat",
-            max_tokens=8000,
+            model="deepseek-v4-pro",
+            max_tokens=20000,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user",   "content": enriched_prompt}
