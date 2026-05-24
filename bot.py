@@ -12,7 +12,7 @@ from telegram.ext import (
 
 # ─── НАСТРОЙКИ ───────────────────────────────────────────────────────────────
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
-ANTHROPIC_KEY  = os.environ.get("ANTHROPIC_KEY", "")
+ANTHROPIC_KEY  = os.environ.get("ANTHROPIC_KEY") or os.environ.get("ANTHROPIC_API_KEY") or ""
 
 # Если хочешь ограничить бота только своим чатом — вставь свой Telegram user_id
 # Узнать id: написать боту @userinfobot
