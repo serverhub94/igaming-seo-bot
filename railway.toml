@@ -1,6 +1,5 @@
 [build]
-builder = "NIXPACKS"
-buildCommand = "pip install --no-cache-dir -r requirements.txt"
+builder = "RAILPACK"
 
 [deploy]
 startCommand = "python bot.py"
